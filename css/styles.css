@@ -64,24 +64,6 @@ img {
     list-style: none;
 }
 
-/* Лого */
-
-.logo {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-family: "raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-}
-
-.logo-primary {
-    color: var(--black-text-color);
-}
-
-.logo-secondary {
-    color: var(--white-text-color);
-}
 
 /* Лінки */
 
@@ -96,22 +78,12 @@ img {
 
 .link:hover,
 .link:focus,
-.link.current,
-.contacts:hover,
-.contacts:focus
-.logo:hover,
-.logo:focus {
+.link.current {
     color: var(--accent-color);
     outline: none;
 }
 
-.contacts {
-    color: inherit;
-}
 
-.map {
-    color: var(--white-text-color);
-}
 
 /* Кнопки */
 
@@ -194,36 +166,79 @@ img {
     padding: 0 15px;
 }
 
+/* Лого */
+
+.logo {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo--primary {
+    color: var(--black-text-color);
+}
+
+.logo--secondary {
+    color: var(--white-text-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
 /* Шапка */
 
-.page-header {
+.header {
     padding: 24px 0 25px;
     border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.site-nav {
+/* Навігація */
+
+.nav {
     display: flex;
     align-items: center;
     flex-grow: 1;
     gap: 93px;
 }
 
-.site-nav.list {
+.nav__list {
+    display: flex;
     gap: 50px;
+    list-style: none;
 }
 
-.site-nav .link {
+.nav__link {
     position: relative;
     padding: 32px 0 32px;
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color var(--timing-function),
+    background-color var(--timing-function);
 }
 
-.current::after {
+  .nav__link:hover,
+  .nav__link:focus,
+  .nav__link--current {
+    color: var(--accent-color);
+    outline: none;
+  }
+
+.nav__link--current::after {
     content: '';
     position: absolute;
     display: block;
@@ -235,19 +250,34 @@ img {
     background-color: var(--accent-color);
 }
 
-.link.contacts {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+/* Контакти */
 
-.info {
+.contacts {
     display: flex;
     align-items: center;
     gap: 50px;
+    list-style: none;
 }
 
-.contacts-icon {
+.contacts__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color var(--timing-function), background-color var(--timing-function);
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
+.contacts__icon {
     fill: currentColor;
     align-items: center;
 }
@@ -419,46 +449,7 @@ img {
     margin-bottom: 16px;
 }
 
-/* Соціальні мережі */
 
-.social-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.social-item {
-    width: 44px;
-    height: 44px;
-}
-
-.social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--icon-current-color);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transition: color var(--timing-function),
-                background-color var(--timing-function);
-}
-
-.social-link:hover,
-.social-link:focus,
-.join-container .social-link:hover,
-.join-container .social-link:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-color);
-    outline: none;
-}
-
-.social-icon {
-    fill: currentColor;
-    width: 20px;
-    height: 20px;
-}
 
 /* Партнери */
 
@@ -579,38 +570,24 @@ img {
 
 /* Підвал */
 
-.page-footer {
+.footer {
     background-color: var(--dark-bcg-color);
     padding: 60px 0;
 }
 
-.footer-container {
+.footer__container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     gap: 70px;
 }
 
-.address .link {
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    line-height: 1.71;
-}
-
-.footer-container .logo {
+.footer__logo {
     display: inline-block;
     margin-bottom: 20px;
 }
 
-.address .item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
-/* Блок приєднуйтесь */
-
-.join-text,
-.subscription-text {
+.footer__caption {
     font-weight: 700;
     line-height: 1.142;
     text-transform: uppercase;
@@ -618,19 +595,100 @@ img {
     margin-bottom: 20px;
 }
 
-.join-container .social-link {
+/* Підвал блок - адреса */
+
+.address__list {
+    list-style: none;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--timing-function),
+    background-color var(--timing-function);
+}
+
+.address__link--map {
+    color: var(--white-text-color);
+}
+
+.address__link:hover,
+.address__link:focus {
+    color: var(--accent-color);
+    outline: none;
+}
+
+/* Підвал блок - приєднуйтесь */
+
+
+
+/* Соціальні мережі */
+
+.social__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.social__item {
+    width: 44px;
+    height: 44px;
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--icon-current-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: color var(--timing-function),
+        background-color var(--timing-function);
+}
+
+.social__link--footer {
     color: var(--white-text-color);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Блок підписки */
+.social__link:hover,
+.social__link:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    outline: none;
+}
 
-.subscription-form {
+.social__icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
+
+/* Підвал блок - підписки */
+
+.subscription__form {
     display: flex;
     gap: 12px;
 }
 
-.subscription-input {
+.form__input::-moz-placeholder,
+.form__textarea::-moz-placeholder {
+    margin: 0;
+    padding: 0;
+}
+
+.subscription__input {
     padding: 15px;
     width: 358px;
     color: var(--white-text-color);
@@ -640,21 +698,48 @@ img {
     border-radius: 4px;
 }
 
-.subscription-input::placeholder {
+.subscription__input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.subscription-form .button {
+.subscription__input:focus {
+    color: var(--white-text-color);
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+
+.subscription__btn {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    width: 200px;
+    border-radius: 4px;
+    border: 0;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color var(--timing-function),
+        background-color var(--timing-function),
+        box-shadow var(--timing-function);
 }
 
-.subscription-icon {
+.subscription__btn:hover,
+.subscription__btn:focus {
+    background-color: #188CE8;
+    outline: none;
+}
+
+.subscription__icon {
     fill: currentColor;
 }
 
