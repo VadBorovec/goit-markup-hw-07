@@ -87,7 +87,7 @@ img {
 
 /* Кнопки */
 
-.button {
+.btn {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -105,7 +105,7 @@ img {
 
 /* Кнопка з Героя */
 
-.button.primary {
+.btn .primary {
     color: var(--white-text-color);
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -295,7 +295,7 @@ img {
     background-size: cover;
 }
 
-.hero-container {
+.hero__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,7 +303,7 @@ img {
     padding: 200px 0;
 }
 
-.hero-title {
+.hero__title {
     color: var(--white-text-color);
     text-transform: uppercase;
     font-weight: 900;
@@ -315,13 +315,38 @@ img {
     margin: 0 auto 30px;
 }
 
+.hero__btn {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: 0;
+    margin: 0 auto;
+    padding: 10px 32px;
+    transition: color var(--timing-function),
+        background-color var(--timing-function),
+        box-shadow var(--timing-function);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+    background-color: #188CE8;
+    outline: none;
+}
+
 /* Секції */
 
 .section {
     padding: 94px 0;
 }
 
-.section-title {
+.section__title {
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
@@ -344,27 +369,28 @@ img {
 
 /* Секція Переваги */
 
-.section.features {
+.features {
     padding-bottom: 0;
 }
 
-.features-container {
+.features__container {
     display: flex;
     justify-content: space-between;
 }
 
-.features.list {
+.features__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    list-style: none;
 }
 
-.features .item {
+.features__item {
     width: 270px;
 }
 
-.features-icon-div {
+.features__icon-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,32 +398,41 @@ img {
     height: 120px;
     background-color: var(--secondary-bcg-color);
     border-radius: 4px;
-    /* padding: 25px; */
     margin-bottom: 30px;
 
 }
 
-.features .title {
+.features__subtitle {
+    color: var(--title-text-color);
+    font-size: inherit;
+    line-height: 1.19;
     text-transform: uppercase;
     line-height: 1.14;
+    margin: 0 auto 10px;
+}
 
+.features__text {
+    color: var(--primary-text-color);
+    line-height: 1.71;
+    margin: 0;
 }
 
 /* Секція Рішення */
 
-.solutions.list {
+.solutions__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    list-style: none;
 }
 
-.solutions .item {
+.solutions__item {
     position: relative;
     width: 370px;
 }
 
-.solutions-subtitle {
+.solutions__subtitle {
     position: absolute;
     width: 100%;
     height: 70px;
@@ -419,14 +454,15 @@ img {
     background-color: var(--secondary-bcg-color);
 }
 
-.team.list {
+.team__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    list-style: none;
 }
 
-.team .item {
+.team__item {
     background-color: var(--primary-bcg-color);
     width: 270px;
     text-align: center;
@@ -434,38 +470,41 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-description {
+.team__description {
     padding: 30px 32px;
 }
 
-.team .title {
-    font-weight: 500;
+.team__subtitle {
+    color: var(--title-text-color);
     font-size: 16px;
+    line-height: 1.19;
+    margin: 0 auto 10px;
+    font-weight: 500;
 }
 
-.team .text {
+.team__text {
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.19;
     margin-bottom: 16px;
 }
 
-
-
 /* Партнери */
 
-.clients .list {
+.clients__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+    list-style: none;
 }
 
-.clients .item {
+.clients__item {
     width: 170px;
     height: 92px;
 }
 
-.clients-link {
+.clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,14 +517,14 @@ img {
                 border-color var(--timing-function);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
     outline: none;
 }
 
-.clients-icon {
+.clients__icon {
     fill: currentColor;
 }
 
