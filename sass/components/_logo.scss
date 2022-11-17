@@ -7,18 +7,18 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-}
 
-&--primary {
-    color: getColor('black-text');
-}
+    &--primary {
+            color: getColor('black-text');
+        }
 
-&--secondary {
-    color: getColor('white-text'); 
-}
-
-&:hover,
-&:focus {
-    color: getColor('accent');
-    outline: none;
+    &--secondary {
+            color: getColor('white-text');
+        }
+    
+    &:hover,
+    &:focus {
+            color: getColor('accent');
+            outline: none;
+        }
 }
