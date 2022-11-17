@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Тіло */
+
+body {
+    width: 100%;
+    background-color: getColor('primary-bcg');
+    color: getColor('primary-text');
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+/* Глобальне скидання стилів */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Зображення */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Списки */
+
+ul {
+    list-style: none;
+}
+
+/* Якорі */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,12 @@
+/* Шапка */
+
+.header {
+    padding: 24px 0 25px;
+    border-bottom: 1px solid #ececec;
+
+    &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+}
