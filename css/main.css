@@ -88,7 +88,7 @@ a:hover, a:focus {
 .address__link--map {
   color: #FFFFFF;
 }
-.address__link:hover, .address__link:focus {
+.address__link:hover, .address__link :focus {
   color: #2196F3;
   outline: none;
 }
