@@ -1,0 +1,26 @@
+/* Підвал */
+
+.footer {
+    background-color: getColor('dark-bcg');
+    padding: 60px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 70px;
+    }
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    &__caption {
+        font-weight: 700;
+        line-height: 1.142;
+        text-transform: uppercase;
+        color: getColor('white-text');
+        margin-bottom: 20px;
+    }
+}

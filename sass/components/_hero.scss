@@ -45,8 +45,8 @@
         margin: 0 auto;
         padding: 10px 32px;
         transition: color $timing-function,
-            background-color $timing-function,
-            box-shadow $timing-function;
+                    background-color $timing-function,
+                    box-shadow $timing-function;
 
         &:hover,
         &:focus {

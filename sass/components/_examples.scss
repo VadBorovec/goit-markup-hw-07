@@ -1,0 +1,13 @@
+/* Приклади робіт */
+
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    list-style: none;
+
+    &__item {
+        width: 370px;
+    }
+}

@@ -3,6 +3,10 @@
 .section {
     padding: 94px 0;
 
+    &--without-padding-top {
+        padding-top: 0;
+    }
+
     &__title {
         color: getColor('title-text');
         font-size: 36px;
