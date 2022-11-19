@@ -1,8 +1,7 @@
 /* Контакти */
 
 .contacts {
-    display: flex;
-    align-items: center;
+    @include displayflex();
     gap: 50px;
 
     &__icon {
@@ -11,8 +10,7 @@
     }
     
     &__link {
-        display: flex;
-        align-items: center;
+        @include displayflex();
         gap: 10px;
         @include fontset($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.02em);
         color: inherit;

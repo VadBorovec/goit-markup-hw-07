@@ -1,7 +1,7 @@
 /*  *Форма модального вікна*  */
 
 .form {
-    display: flex;
+    @include displayflex($align-items: stretch);
     flex-direction: column;
 
     &__title {
@@ -106,9 +106,7 @@
 /* Чекбокс */
 
 .checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include displayflex();
     gap: 7px;
     margin-bottom: 30px;
 
@@ -131,9 +129,7 @@
     }
 
     &__label {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include displayflex();
         gap: 7px;
         @include fontset($fw: 400, $fs: 14px, $lh: 1.71);
         color: getColor('primary-text');

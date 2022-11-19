@@ -446,6 +446,7 @@ a:hover, a:focus {
 .card__overlay {
   position: absolute;
   display: flex;
+  justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
@@ -501,9 +502,10 @@ a:hover, a:focus {
 /* Партнери */
 .clients__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
 }
 .clients__item {
   width: 170px;
@@ -514,8 +516,8 @@ a:hover, a:focus {
 }
 .clients__link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   border: 1px solid #AFB1B8;
@@ -531,6 +533,7 @@ a:hover, a:focus {
 /* Контакти */
 .contacts {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
@@ -540,6 +543,7 @@ a:hover, a:focus {
 }
 .contacts__link {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   font-weight: 500;
@@ -566,8 +570,9 @@ a:hover, a:focus {
 /* Приклади робіт */
 .examples {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .examples__item {
@@ -578,11 +583,13 @@ a:hover, a:focus {
 .features__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .features__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .features__item {
@@ -675,6 +682,8 @@ a:hover, a:focus {
 /*  *Форма модального вікна*  */
 .form {
   display: flex;
+  justify-content: center;
+  align-items: stretch;
   flex-direction: column;
 }
 .form__title {
@@ -978,14 +987,16 @@ a:hover, a:focus {
 /* Навігація */
 .nav {
   display: flex;
+  justify-content: start;
   align-items: center;
   flex-grow: 1;
   gap: 93px;
 }
 .nav__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
-  list-style: none;
 }
 .nav__link {
   position: relative;
@@ -1036,8 +1047,8 @@ a:hover, a:focus {
 /* Соціальні мережі */
 .social__list {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 .social__item {
@@ -1071,9 +1082,10 @@ a:hover, a:focus {
 /* Секція Рішення */
 .solutions__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
 }
 .solutions__item {
   position: relative;
@@ -1102,6 +1114,8 @@ a:hover, a:focus {
 /* Підвал блок - підписки */
 .subscription-form {
   display: flex;
+  justify-content: center;
+  align-items: stretch;
   gap: 12px;
 }
 .subscription-form__input {
@@ -1150,9 +1164,9 @@ a:hover, a:focus {
 }
 .subscription-form__btn {
   display: flex;
-  gap: 10px;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -1180,8 +1194,9 @@ a:hover, a:focus {
 }
 .team__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .team__item {

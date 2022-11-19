@@ -1,15 +1,13 @@
 /* Навігація */
 
 .nav {
-    display: flex;
-    align-items: center;
+    @include displayflex($justify-content: start);
     flex-grow: 1;
     gap: 93px;
 
     &__list {
-        display: flex;
+        @include displayflex();
         gap: 50px;
-        list-style: none;
     }
 
     &__link {

@@ -1,9 +1,7 @@
 /* Фільтри з Портфоліо */
 
 .filters {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include displayflex();
     gap: 8px;
     margin-bottom: 50px;
     

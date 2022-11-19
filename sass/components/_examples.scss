@@ -1,9 +1,8 @@
 /* Приклади робіт */
 
 .examples {
-    display: flex;
+    @include displayflex($justify-content: space-evenly);
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: 30px;
 
     &__item {

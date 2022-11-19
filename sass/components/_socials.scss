@@ -3,9 +3,7 @@
 .social {
 
     &__list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include displayflex();
         gap: 10px;
     }
 
@@ -21,9 +19,7 @@
     }
 
     &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include displayflex();
         color: getColor('icon-current');
         width: 100%;
         height: 100%;

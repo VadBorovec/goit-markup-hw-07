@@ -1,7 +1,7 @@
 /* Підвал блок - підписки */
 
 .subscription-form {
-    display: flex;
+    @include displayflex($align-items: stretch);
     gap: 12px;
 
     &__input {
@@ -26,10 +26,8 @@
     }
 
     &__btn {
-        display: flex;
+        @include displayflex();
         gap: 10px;
-        justify-content: center;
-        align-items: center;
         font-family: inherit;
         font-weight: 700;
         font-size: 16px;

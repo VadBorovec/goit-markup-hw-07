@@ -23,8 +23,7 @@
 
     &__overlay {
         position: absolute;
-        display: flex;
-        align-items: center;
+        @include displayflex();
         top: 0;
         left: 0;
         padding: 0 24px;

@@ -4,9 +4,8 @@
     background-color: getColor('secondary-bcg');
 
     &__list {
-        display: flex;
+        @include displayflex();
         flex-wrap: wrap;
-        justify-content: center;
         gap: 30px;
 
     }
