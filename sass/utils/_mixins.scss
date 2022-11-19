@@ -1,0 +1,12 @@
+// Міксін 
+
+@mixin fontset($fw: 700, $fs: 16px, $lh: 1.17, $ls: 0.03em,
+        $align: start, $transform: none, $decoration: none) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-align: $align;
+    text-transform: $transform;
+    text-decoration: $decoration;
+}

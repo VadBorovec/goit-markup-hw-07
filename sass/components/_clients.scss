@@ -7,7 +7,6 @@
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
-        list-style: none;
     }
 
     &__item {
@@ -28,8 +27,8 @@
         border: 1px solid getColor('icon-current');
         border-radius: 4px;
         color: getColor('icon-current');
-        transition: color $timing-function,
-                    border-color $timing-function;
+        // transition: color $timing-function,
+        // border-color $timing-function;
             
         &:hover,
         &:focus {
@@ -38,5 +37,4 @@
             outline: none;
         }
     }
-
 }

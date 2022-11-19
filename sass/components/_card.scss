@@ -1,12 +1,9 @@
 /* Картка з портфоліо */
  
 .card {
-    color: getColor('title-text');
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    transition: color $timing-function, background-color $timing-function;
+    @include fontset($fw: 500, $fs: 16px, $lh: 1.14, $ls: 0.02em);
+    // color: getColor('title-text');
+    // transition: color $timing-function, background-color $timing-function;
 
     &:hover,
     &:focus,
@@ -47,11 +44,8 @@
     }
 
     &__caption {
+        @include fontset($fw: 400, $fs: 18px, $lh: 1.56);
         color: getColor('white-text');
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.56;
-        letter-spacing: 0.03em;
     }
 
     &__description {
@@ -61,18 +55,14 @@
     }
 
     &__subtitle {
+        @include fontset($fw: 700, $fs: 18px, $lh: 2, $ls: 0.06em);
         color: getColor('title-text');
-        font-size: 18px;
-        letter-spacing: 0.06em;
-        line-height: 2;
         margin: 0 auto 4px;
     }
 
     &__text {
+        @include fontset($fw: 400, $fs: 16px, $lh: 1.88);
         color: getColor('primary-text');
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.88;
         margin: 0;
     }
 }

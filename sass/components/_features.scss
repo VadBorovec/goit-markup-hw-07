@@ -12,7 +12,6 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
-        list-style: none;
     }
 
     &__item {
@@ -31,11 +30,8 @@
     }
 
     &__subtitle {
+        @include fontset($fs: 14px, $lh: 1.14, $ls: 0.03em, $transform: uppercase);
         color: getColor('title-text');
-        font-size: inherit;
-        line-height: 1.19;
-        text-transform: uppercase;
-        line-height: 1.14;
         margin: 0 auto 10px;
     }
 

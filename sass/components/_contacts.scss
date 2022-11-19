@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    list-style: none;
 
     &__icon {
         fill: currentColor;
@@ -15,12 +14,9 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        @include fontset($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.02em);
         color: inherit;
-        text-decoration: none;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        transition: color $timing-function, background-color $timing-function;
+        // transition: color $timing-function, background-color $timing-function;
 
         &:hover,
         &:focus {

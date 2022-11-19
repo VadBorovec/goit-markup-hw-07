@@ -1,4 +1,266 @@
 @charset "UTF-8";
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0;
+  /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +272,13 @@ body {
   background-color: #ffffff;
   color: #757575;
   font-family: "roboto", sans-serif;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: start;
+  text-transform: none;
+  text-decoration: none;
 }
 
 /* Глобальне скидання стилів */
@@ -42,12 +308,16 @@ ul {
 
 /* Лінки */
 a {
-  color: #212121;
-  text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: start;
+  text-transform: none;
+  text-decoration: none;
+  font-style: normal;
+  color: #212121;
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 a:hover, a:focus {
   color: #2196F3;
@@ -70,20 +340,18 @@ a:hover, a:focus {
 }
 
 /* Підвал блок - адреса */
-.address__list {
-  list-style: none;
-}
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 .address__link {
-  font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.03em;
+  font-size: 14px;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+  text-align: start;
+  text-transform: none;
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(255, 255, 255, 0.6);
 }
 .address__link--map {
   color: #FFFFFF;
@@ -102,7 +370,7 @@ a:hover, a:focus {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -125,7 +393,7 @@ a:hover, a:focus {
   border: 0;
   margin: 0 auto;
   padding: 10px 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #FFFFFF;
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -153,12 +421,13 @@ a:hover, a:focus {
 
 /* Картка з портфоліо */
 .card {
-  color: #212121;
-  text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: start;
+  text-transform: none;
+  text-decoration: none;
 }
 .card:hover, .card:focus, .card.current {
   color: #2196F3;
@@ -184,17 +453,20 @@ a:hover, a:focus {
   background-color: #2196F3;
   opacity: 0.9;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card:hover .card__overlay, .card:focus .card__overlay {
   transform: translateY(0);
 }
 .card__caption {
-  color: #FFFFFF;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+  text-align: start;
+  text-transform: none;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .card__description {
   padding: 20px 24px;
@@ -202,17 +474,25 @@ a:hover, a:focus {
   border-top: 0;
 }
 .card__subtitle {
-  color: #212121;
+  font-weight: 700;
   font-size: 18px;
-  letter-spacing: 0.06em;
   line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: start;
+  text-transform: none;
+  text-decoration: none;
+  color: #212121;
   margin: 0 auto 4px;
 }
 .card__text {
-  color: #757575;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
+  text-align: start;
+  text-transform: none;
+  text-decoration: none;
+  color: #757575;
   margin: 0;
 }
 
@@ -222,7 +502,6 @@ a:hover, a:focus {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  list-style: none;
 }
 .clients__item {
   width: 170px;
@@ -240,7 +519,6 @@ a:hover, a:focus {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:hover, .clients__link:focus {
   color: #2196F3;
@@ -253,7 +531,6 @@ a:hover, a:focus {
   display: flex;
   align-items: center;
   gap: 50px;
-  list-style: none;
 }
 .contacts__icon {
   fill: currentColor;
@@ -263,12 +540,14 @@ a:hover, a:focus {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: inherit;
-  text-decoration: none;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: start;
+  text-transform: none;
+  text-decoration: none;
+  color: inherit;
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196F3;
@@ -289,7 +568,6 @@ a:hover, a:focus {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 30px;
-  list-style: none;
 }
 .examples__item {
   width: 370px;
@@ -305,7 +583,6 @@ a:hover, a:focus {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  list-style: none;
 }
 .features__item {
   width: 270px;
@@ -321,11 +598,14 @@ a:hover, a:focus {
   margin-bottom: 30px;
 }
 .features__subtitle {
-  color: #212121;
-  font-size: inherit;
-  line-height: 1.19;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: start;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #212121;
   margin: 0 auto 10px;
 }
 .features__text {
@@ -341,7 +621,6 @@ a:hover, a:focus {
   align-items: center;
   gap: 8px;
   margin-bottom: 50px;
-  list-style: none;
 }
 .filters__btn {
   font-family: inherit;
@@ -354,7 +633,7 @@ a:hover, a:focus {
   border: 0;
   margin: 0 auto;
   padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #212121;
   background-color: #F5F4FA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -418,7 +697,7 @@ a:hover, a:focus {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  transition: border 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:hover, .form__input:focus {
   border-color: #2196F3;
@@ -429,7 +708,7 @@ a:hover, a:focus {
   left: 12px;
   transform: translateY(-50%);
   fill: #212121;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:hover + .form__icon, .form__input:focus + .form__icon {
   fill: #2196F3;
@@ -444,7 +723,7 @@ a:hover, a:focus {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__comment:hover, .form__comment:focus {
   fill: #2196F3;
@@ -490,7 +769,7 @@ a:hover, a:focus {
   border: 0;
   margin: 0 auto;
   padding: 10px 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__btn:hover, .form__btn:focus {
   background-color: #188CE8;
@@ -514,7 +793,7 @@ a:hover, a:focus {
 .checkbox__icon {
   border: 2px solid #212121;
   border-radius: 2px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #FFFFFF;
 }
 .checkbox__input:checked + .checkbox__icon {
@@ -609,7 +888,7 @@ a:hover, a:focus {
   border: 0;
   margin: 0 auto;
   padding: 10px 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: #188CE8;
@@ -647,7 +926,7 @@ a:hover, a:focus {
   overflow: auto;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Кнопка закриття модального вікна */
 }
 .modal__btn {
@@ -662,7 +941,7 @@ a:hover, a:focus {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -691,7 +970,7 @@ a:hover, a:focus {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__link:hover, .nav__link:focus, .nav__link--current {
   color: #2196F3;
@@ -748,7 +1027,7 @@ a:hover, a:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__link--footer {
   color: #FFFFFF;
@@ -842,7 +1121,7 @@ a:hover, a:focus {
   color: #FFFFFF;
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscription-form__btn:hover, .subscription-form__btn:focus {
   background-color: #188CE8;
