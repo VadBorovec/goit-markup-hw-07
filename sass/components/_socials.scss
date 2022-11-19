@@ -7,7 +7,6 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-        list-style: none;
     }
 
     &__item {
@@ -29,8 +28,8 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        transition: color $timing-function,
-                    background-color $timing-function;
+        // transition: color $timing-function,
+        //             background-color $timing-function;
 
         &--footer {
             color: getColor('white-text');

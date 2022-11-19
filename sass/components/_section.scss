@@ -8,10 +8,8 @@
     }
 
     &__title {
+        @include fontset($fs: 36px, $ls: 0.03em, $align: center);
         color: getColor('title-text');
-        font-size: 36px;
-        line-height: 1.17;
         margin: 0 auto 50px;
-        text-align: center;
     }
 }

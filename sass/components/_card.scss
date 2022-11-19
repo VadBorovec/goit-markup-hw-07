@@ -6,10 +6,8 @@
     // transition: color $timing-function, background-color $timing-function;
 
     &:hover,
-    &:focus,
-    &.current {
+    &:focus {
         color: getColor('accent');
-        outline: none;
     }
 
     &:hover,

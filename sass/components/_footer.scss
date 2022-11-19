@@ -17,9 +17,7 @@
     }
 
     &__caption {
-        font-weight: 700;
-        line-height: 1.142;
-        text-transform: uppercase;
+        @include fontset ($fs: 14px, $lh: 1.14, $transform: uppercase);
         color: getColor('white-text');
         margin-bottom: 20px;
     }
