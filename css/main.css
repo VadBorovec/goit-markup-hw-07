@@ -588,7 +588,7 @@ a:hover, a:focus {
 .features__list {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -857,6 +857,13 @@ a:hover, a:focus {
 }
 .checkbox__link {
   color: #2196F3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: start;
+  text-transform: none;
+  text-decoration: underline;
 }
 
 /* .checkbox-label::before {
@@ -883,7 +890,7 @@ a:hover, a:focus {
 } */
 /* Шапка */
 .header {
-  padding: 24px 0 25px;
+  padding: 25px 0;
   border-bottom: 1px solid #ececec;
 }
 .header__container {

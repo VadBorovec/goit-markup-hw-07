@@ -120,6 +120,7 @@
 
     &__link {
         color: getColor('accent');
+        @include fontset ($fw: 400, $fs: 14px, $lh: 1.71, $decoration: underline);
     }
 }
 
