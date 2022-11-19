@@ -317,7 +317,7 @@ a {
   text-decoration: none;
   font-style: normal;
   color: #212121;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 a:hover, a:focus {
   color: #2196F3;
@@ -368,7 +368,7 @@ a:hover, a:focus {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 2500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -397,7 +397,7 @@ a:hover, a:focus {
   margin: 0 auto;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover, .btn:focus {
   background-color: #188CE8;
@@ -456,7 +456,7 @@ a:hover, a:focus {
   background-color: #2196F3;
   opacity: 0.9;
   transform: translateY(100%);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card:hover .card__overlay, .card:focus .card__overlay {
   transform: translateY(0);
@@ -631,20 +631,32 @@ a:hover, a:focus {
   margin-bottom: 50px;
 }
 .filters__btn {
+  width: inherit;
+  height: 38px;
   font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  color: #212121;
+  background-color: #F5F4FA;
+  margin: 0 auto;
+  padding: 6px 22px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  cursor: pointer;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  border: 0;
-  margin: 0 auto;
-  padding: 6px 22px;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #212121;
-  background-color: #F5F4FA;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.03em;
+  text-align: start;
+  text-transform: none;
+  text-decoration: none;
 }
 .filters__btn:hover, .filters__btn:focus {
   color: #FFFFFF;
@@ -718,7 +730,7 @@ a:hover, a:focus {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  transition: border 250ms 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:hover, .form__input:focus {
   border-color: #2196F3;
@@ -729,7 +741,7 @@ a:hover, a:focus {
   left: 12px;
   transform: translateY(-50%);
   fill: #212121;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:hover + .form__icon, .form__input:focus + .form__icon {
   fill: #2196F3;
@@ -744,7 +756,7 @@ a:hover, a:focus {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__comment:hover, .form__comment:focus {
   fill: #2196F3;
@@ -781,22 +793,25 @@ a:hover, a:focus {
   color: rgba(117, 117, 117, 0.5);
 }
 .form__btn {
+  width: 200px;
+  height: 50px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  cursor: pointer;
-  letter-spacing: inherit;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
   color: #FFFFFF;
   background-color: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  letter-spacing: 0.06em;
-  width: 200px;
-  border-radius: 4px;
-  border: 0;
   margin: 0 auto;
   padding: 10px 32px;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__btn:hover, .form__btn:focus {
   background-color: #188CE8;
@@ -819,7 +834,7 @@ a:hover, a:focus {
 .checkbox__icon {
   border: 2px solid #212121;
   border-radius: 2px;
-  transition: border 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #FFFFFF;
 }
 .checkbox__input:checked + .checkbox__icon {
@@ -908,20 +923,28 @@ a:hover, a:focus {
   margin: 0 auto 30px;
 }
 .hero__btn {
-  color: #FFFFFF;
-  background-color: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 216px;
+  height: 50px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  cursor: pointer;
   letter-spacing: 0.06em;
-  border-radius: 4px;
-  border: 0;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #2196F3;
   margin: 0 auto;
-  padding: 10px 32px;
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: #188CE8;
@@ -960,7 +983,7 @@ a:hover, a:focus {
   overflow: auto;
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Кнопка закриття модального вікна */
 }
 .modal__btn {
@@ -975,7 +998,7 @@ a:hover, a:focus {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   padding: 0;
   margin: 0;
@@ -1167,19 +1190,25 @@ a:hover, a:focus {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 200px;
+  height: 50px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  cursor: pointer;
   letter-spacing: 0.06em;
-  width: 200px;
-  border-radius: 4px;
-  border: 0;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
   color: #FFFFFF;
   background-color: #2196F3;
+  margin: 0 auto;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscription-form__btn:hover, .subscription-form__btn:focus {
   background-color: #188CE8;

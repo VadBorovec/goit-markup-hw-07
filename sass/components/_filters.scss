@@ -6,22 +6,13 @@
     margin-bottom: 50px;
     
     &__btn {
-        font-family: inherit;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.63;
-        cursor: pointer;
-        letter-spacing: 0.06em;
-        border-radius: 4px;
-        border: 0;
-        margin: 0 auto;
-        padding: 6px 22px;
-        transition: color $timing-function,
-                    background-color $timing-function,
-                    box-shadow $timing-function;
-        color: getColor('title-text');
-        background-color: getColor('secondary-bcg');
-        box-shadow: $box-shadow;
+        @include btn ( $height: 38px,
+            $width: inherit,
+            $color: getColor('title-text'),
+            $background-color: getColor('secondary-bcg'),
+            $padding: 6px 22px,
+            $box-shadow: none);
+        @include fontset ($fw:500, $lh: 1.63);
 
         &:hover,
         &:focus {

@@ -25,22 +25,8 @@
     }
 
     &__btn {
-        color: getColor('white-text');
-        background-color: getColor('accent');
-        box-shadow: $box-shadow;
-        font-family: inherit;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        cursor: pointer;
-        letter-spacing: 0.06em;
-        border-radius: 4px;
-        border: 0;
-        margin: 0 auto;
-        padding: 10px 32px;
-        transition: color $timing-function,
-                    background-color $timing-function,
-                    box-shadow $timing-function;
+        @include btn($width: 216px, $padding: 0);
+        @include displayflex ();
 
         &:hover,
         &:focus {
